@@ -454,5 +454,5 @@ train_sizes, train_scores, test_scores = learning_curve(
     dt, X=X_train, y=y_train, train_sizes=train_sizes
 )
 plot.learning_curve(train_scores, test_scores, train_sizes)
-pickle.dump(lr,open('model.pkl','wb'))
+pickle.dump(dt,open('model.pkl','wb'))
 model = pickle.load(open('model.pkl','rb'))
